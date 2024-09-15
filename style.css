@@ -1,0 +1,163 @@
+/* 
+
+Colors
+
+Primary 
+- Tomato (#FF6156)
+
+Netural
+- Dark Slate Grey (#242741)
+- Charcoal grey (#36384E)
+- Grey (#9194A0)
+- White (#FFFFFF)
+
+Typography 
+
+Body 
+
+Font size (para): 1rem
+
+Font 
+
+Family: Roboto
+Weights: 400, 700 
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+body {
+  font-size: 16px;
+  font-family: roboto;
+  color: #9194a0;
+  background-color: #242741;
+  margin: 0;
+  line-height: 1.5rem;
+  font-weight: 400;
+ /*  padding: 4rem; */
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+/* .hide {
+  display: none !important;
+}
+ */
+
+h1,
+label {
+  font-weight: 700;
+}
+
+h1 {
+ margin-bottom: 1rem;
+}
+
+.signup__card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  max-height: 90vh;
+  max-width: 900px;
+  background-color: #ffffff;
+  color: #242741;
+  padding-left: 2rem;;
+  border-radius: 2rem;
+}
+
+.subscribe {
+  grid-column: 1 / 2;
+  max-width: 400px;
+}
+
+.background__image {
+  grid-column: 2 / 3;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.background__image img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+li::marker {
+  content: url(./assets/images/icon-list.svg);
+}
+
+li {
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+label {
+  display: inline-block;
+  font-size: smaller;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-top: 0.2rem;
+  border: 1px solid #9194a0;
+  width: 100%;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #9194a0;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: #36384e;
+  color: #ffffff;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(255, 82, 123);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 82, 123, 1) 0%,
+    rgba(255, 106, 58, 1) 100%
+  );
+}
+
+.email__label {
+  display: flex;
+  justify-content: space-between;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #242741;
+ /*  background-color: #ffffff; */
+}

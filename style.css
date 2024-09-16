@@ -166,6 +166,8 @@ input:focus {
   body {  
     display: initial;
     background-color: #ffffff;
+    padding: 0;
+    width: 100%;
   }
 
   .background__image {
@@ -178,19 +180,20 @@ input:focus {
   }
 
   .signup__card {
-  /*   max-height: 100vh; */
-    width: 90%;
+    max-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding: 0;
   }
 
   .subscribe {
-    padding: 0;
+    padding: 0 1rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     max-width: 90vw;
   }
 
@@ -204,6 +207,6 @@ input:focus {
   }
 
   button {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
 }

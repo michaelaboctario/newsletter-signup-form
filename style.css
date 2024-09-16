@@ -74,10 +74,6 @@ h1 {
   border-radius: 2rem;
 }
 
-.hide {
-  display: none;
-} 
-
 .subscribe {
   grid-column: 1 / 2;
   max-width: 400px;
@@ -185,6 +181,10 @@ input:focus {
   max-width: 200px;
 }
 
+.hide {
+  display: none;
+}  
+
 @media screen and (max-width: 500px) {
   body {  
     display: initial;
@@ -232,4 +232,25 @@ input:focus {
   button {
     margin: 1rem 0;
   }
+
+  .hide {
+    display: none;
+  }  
+
+  .success__card {
+    height: 100vh;
+    justify-content: space-between;
+  } 
+
+  .success__card img {
+    margin-top: 80px;
+    width: 4rem;
+    height: 4rem;
+  } 
+
+  .success__card h1 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  
 }

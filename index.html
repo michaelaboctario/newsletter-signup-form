@@ -11,7 +11,7 @@
 <body>
 
   <!-- Sign-up form start -->
-  <section class="signup__card hide">
+  <section class="signup__card">
     <div class="subscribe">
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -23,9 +23,9 @@
       <form class="signup__form">
         <div class="email__label">
           <label for="email">Email address</label>
-          <!-- <label class="hide error__message">Valid email required</label> -->
+          <label class="error__message hide">Valid email required</label> 
         </div>
-        <input type="email" id="email" name="email" placeholder="email@company.com" />
+        <input type="email" id="email" name="email" class="error__email" placeholder="email@company.com" />
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
     </div>
@@ -38,7 +38,7 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <section class="success__card">
+  <section class="success__card hide">
     <div class="success__message">
       <img src="./assets/images/icon-success.svg" alt="image success" />
       <h1>Thanks for subscribing!</h1>
@@ -50,5 +50,6 @@
     <button type="button">Dismiss message</button>
   </section>
 
+  <script src="script.js" defer></script>
 </body>
 </html>

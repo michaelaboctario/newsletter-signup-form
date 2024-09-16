@@ -123,6 +123,10 @@ input {
   color: #9194a0;
 }
 
+.error__message {
+  color: red;
+}
+
 button {
   padding: 0.8rem 1.5rem;
   border: none;
@@ -153,8 +157,13 @@ button:hover {
 input:focus {
   outline: none;
   border: 1px solid #242741;
- /*  background-color: #ffffff; */
 }
+
+input.error__email {
+  outline: none;
+  border: 1px solid red;
+  background-color: #f3e2ec;
+} 
 
 /* success message */
 .success__card {

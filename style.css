@@ -64,7 +64,6 @@ h1 {
 
 .signup__card {
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 1fr;
   max-height: 90vh;
   max-width: 900px;
@@ -76,6 +75,7 @@ h1 {
 
 .subscribe {
   padding: 1.5rem 1rem 1.5rem 2rem;
+  align-self: center;
 }
 
 .subscribe p {
@@ -88,8 +88,10 @@ h1 {
 
 .background__image img {
   width: 100%;
-  max-height: 80vh; 
+  /* max-height: 80vh;  */
+  max-height: calc(90vh - 2rem);
   object-fit: cover;
+  border-radius: 1.2rem;
 }
 
 ul {
@@ -237,6 +239,7 @@ input.error__email {
   .background__image img {
     content: url("./assets/images/illustration-sign-up-mobile.svg");
     width: 100%;
+    border-radius: 0 0 1.5rem 1.5rem;
   }
 
  

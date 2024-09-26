@@ -65,23 +65,27 @@ h1 {
 .signup__card {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   max-height: 90vh;
   max-width: 900px;
   background-color: #ffffff;
   color: #242741;
-  padding-left: 2rem;;
+  padding: 0 1rem;
   border-radius: 2rem;
 }
 
-.subscribe {
+/* .subscribe {
   grid-column: 1 / 2;
   max-width: 400px;
+} */
+
+.subscribe {
+  padding: 1.5rem 1rem 1.5rem 2rem;
 }
 
 .background__image {
-  grid-column: 2 / 3;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+/*   grid-column: 2 / 3; */
+  padding: 1rem 0rem 1rem 1rem;
 }
 
 .background__image img {
@@ -194,7 +198,7 @@ input.error__email {
   display: none;
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   body {  
     display: initial;
     background-color: #ffffff;
@@ -204,6 +208,7 @@ input.error__email {
 
   .background__image {
     padding: 0;
+    min-height: 40vh;
   }
 
   .background__image img {
@@ -227,6 +232,7 @@ input.error__email {
     flex-direction: column;
     width: 90%;
     max-width: 90vw;
+    min-height: 60vh;
   }
 
   .subscribe h1 {
